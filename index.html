@@ -11,6 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&family=Inter:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <!-- Navbar -->
@@ -18,16 +19,35 @@
             <!-- Logo -->
             <div class="navbar__item">Logo</div>
             <!-- Links -->
-            <div class="navbar__item">Links</div>
-            <!-- Login -->
-            <!-- Register -->
-            <div class="navbar__item">Login & About</div>
-        </div>
+            <div class="navbar__item">
+                <!-- Features - select -->
+                <label for="features">Features</label>
+                <select name="features" id="features">
+                    <option value="todo-list">Todo List</option>
+                    <option value="calendar">Calendar</option>
+                    <option value="reminders">Reminders</option>
+                    <option value="planning">Planning</option>
+                </select>
+                <!-- Company - select -->
+                <label for="company">Company</label>
+                <select name="company" id="company">
+                    <option value="history">History</option>
+                    <option value="our-team">Our Team</option>
+                    <option value="blog">Blog</option>
+                </select>
 
-        <!-- Features - select -->
-        <!-- Company - select -->
-        <!-- Careers -->
-        <!-- About -->
+                <!-- Careers -->
+                <a href="#">Careers</a>
+                <!-- About -->
+                <a href="#">About</a>
+            </div>
+            <div class="navbar__item">
+                <!-- Login -->
+                <a href="#">Login</a>
+                <!-- Register -->
+                <a href="#">Register</a>
+            </div>
+        </div>
 
         <!-- Hero section -->
         <!-- div - text -->
