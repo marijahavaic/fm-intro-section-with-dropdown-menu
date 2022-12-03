@@ -17,31 +17,45 @@
         <!-- Navbar -->
         <div class="navbar">
             <!-- Logo -->
-            <div class="navbar__item">Logo</div>
-            <!-- Links -->
-            <div class="navbar__item">
-                <!-- Features - select -->
-                <label for="features">Features</label>
-                <select name="features" id="features">
-                    <option value="todo-list">Todo List</option>
-                    <option value="calendar">Calendar</option>
-                    <option value="reminders">Reminders</option>
-                    <option value="planning">Planning</option>
-                </select>
-                <!-- Company - select -->
-                <label for="company">Company</label>
-                <select name="company" id="company">
-                    <option value="history">History</option>
-                    <option value="our-team">Our Team</option>
-                    <option value="blog">Blog</option>
-                </select>
+            <div class="navbar__left-side">
+                <div class="navbar__item">
+                    <img src="./images/logo.svg" class="logo" alt="Logo" />
+                </div>
+                <!-- Links -->
+                <div class="navbar__item">
+                    <!-- Features - dropdown -->
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Features
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Todo List</a>
+                            <a href="#">Calendar</a>
+                            <a href="#">Reminders</a>
+                            <a href="#">Planning</a>
+                        </div>
+                    </div>
+                    <!-- Company - select -->
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Company
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">History</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
 
-                <!-- Careers -->
-                <a href="#">Careers</a>
-                <!-- About -->
-                <a href="#">About</a>
+                    <!-- Careers -->
+                    <a href="#" aria-disabled="true">Careers</a>
+                    <!-- About -->
+                    <a href="#">About</a>
+                </div>
             </div>
-            <div class="navbar__item">
+            <div class="navbar__right-side">
                 <!-- Login -->
                 <a href="#">Login</a>
                 <!-- Register -->
@@ -57,4 +71,5 @@
         <!-- logos -->
         <!-- banner -->
     </body>
+    <script src="script.js"></script>
 </html>
