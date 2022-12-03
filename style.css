@@ -24,6 +24,10 @@ p {
     font-size: 18px;
 }
 
+h1 {
+    font-size: 100px;
+}
+
 /* Navbar container */
 .navbar,
 .navbar-item,
@@ -152,15 +156,50 @@ a:hover,
 
 .hero-section {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 80%;
-    margin: 30px 0;
+    margin: 30px 0 60px 140px;
+}
+
+.hero-section__text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-section__text-section__footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section__banner {
+    height: 100%;
+    margin-right: 100px;
 }
 
 .hero-section__banner img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
 }
 
 .attribution {
     text-align: center;
+}
+
+.learn-more {
+    margin-top: 60px;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#heroText {
+    margin-top: 60px;
+    color: var(--medium-gray);
 }
