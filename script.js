@@ -1,8 +1,16 @@
+const dropdownBtn = document.querySelector(".dropbtn");
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+function arrowToggle() {
+    document.getElementById("arrow").classList.toggle("show");
+}
+
+dropdownBtn.addEventListener("onHover", arrowToggle());
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
