@@ -11,14 +11,18 @@
             href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&family=Inter:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/30d58ee62c.js"
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <!-- Navbar -->
-        <div class="navbar">
-            <!-- Logo -->
+        <div class="navbar" id="navbar">
             <div class="navbar__left-side">
-                <div class="navbar__item">
+                <!-- Logo -->
+                <div class="navbar__item-logo">
                     <img src="./images/logo.svg" class="logo" alt="Logo" />
                 </div>
                 <!-- Links -->
@@ -44,7 +48,7 @@
                             <a href="#">
                                 <img
                                     src="./images/icon-todo.svg"
-                                    class="icon"
+                                    class="iconDropdown"
                                     alt="Icon todo"
                                 />
                                 Todo List
@@ -52,7 +56,7 @@
                             <a href="#">
                                 <img
                                     src="./images/icon-calendar.svg"
-                                    class="icon"
+                                    class="iconDropdown"
                                     alt="Icon calendar"
                                 />
                                 Calendar</a
@@ -60,7 +64,7 @@
                             <a href="#">
                                 <img
                                     src="./images/icon-reminders.svg"
-                                    class="icon"
+                                    class="iconDropdown"
                                     alt="Icon reminders"
                                 />
                                 Reminders</a
@@ -68,7 +72,7 @@
                             <a href="#">
                                 <img
                                     src="./images/icon-planning.svg"
-                                    class="icon"
+                                    class="iconDropdown"
                                     alt="Icon planning"
                                 />
                                 Planning</a
@@ -111,6 +115,13 @@
                 <!-- Register -->
                 <a href="#" id="register">Register</a>
             </div>
+            <a
+                href="javascript:void(0);"
+                class="icon"
+                onclick="toggleResponsiveness()"
+            >
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <!-- Hero section -->
         <div class="hero-section">
@@ -135,13 +146,17 @@
                 <img src="./images/image-hero-desktop.png" alt="hero image" />
             </div>
         </div>
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="https://marijahavaic.com">Marija Havaic</a>.
+        <div class="overlay"></div>
+        <div class="footer">
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a href="https://marijahavaic.com">Marija Havaic</a>.
+            </div>
         </div>
     </body>
     <script src="script.js"></script>
