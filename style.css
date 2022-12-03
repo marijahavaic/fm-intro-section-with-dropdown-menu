@@ -15,6 +15,10 @@ body {
     margin: 20px 40px;
 }
 
+body {
+    margin: 20px 40px;
+}
+
 p {
     font-size: 18px;
 }
@@ -25,7 +29,13 @@ p {
 .navbar__right-side {
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.navbar__left-side {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 }
 .navbar__left-side {
