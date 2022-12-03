@@ -172,6 +172,7 @@ a:hover,
 
 .hero-section__text-section__footer {
     margin-top: 30px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -195,8 +196,18 @@ a:hover,
     margin-top: 60px;
     color: var(--almost-white);
     background-color: var(--almost-black);
+    border: 1px solid var(--almost-black);
     padding: 20px;
     border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.learn-more:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    border: 1px solid var(--almost-black);
+    cursor: pointer;
 }
 
 #heroText {
