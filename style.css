@@ -21,6 +21,13 @@ p {
 
 /* Navbar container */
 .navbar,
+.navbar-item,
+.navbar__right-side {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .navbar__left-side {
     overflow: hidden;
     display: flex;
@@ -36,12 +43,18 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: var(--medium-gray);
 }
 
 /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
+}
+
+a:hover,
+.dropbtn:hover {
+    color: var(--almost-black);
 }
 
 /* Dropdown button */
@@ -53,6 +66,7 @@ p {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    color: var(--medium-gray);
 }
 
 /* Add a red background color to navbar links on hover */
@@ -68,7 +82,7 @@ p {
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
-    min-width: 150px;
+    min-width: 130px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -87,6 +101,7 @@ p {
 
 .arrow {
     display: none;
+    padding-left: 5px;
 }
 
 .arrow.show {
@@ -117,6 +132,9 @@ p {
 }
 
 #disabled {
-    color: var(--medium-gray);
     cursor: not-allowed;
+}
+
+#login {
+    margin-right: 20px;
 }
