@@ -160,3 +160,7 @@ a:hover,
     object-fit: contain;
     height: 100%;
 }
+
+.attribution {
+    text-align: center;
+}
