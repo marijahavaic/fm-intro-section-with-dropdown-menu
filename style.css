@@ -127,8 +127,8 @@ a:hover,
 }
 
 #register {
-    border: 2px solid var(--almost-black);
-    border-radius: 16px;
+    border: 1.75px solid var(--medium-gray);
+    border-radius: 8px;
 }
 
 .iconDropdown {
@@ -254,7 +254,7 @@ a:hover,
     .sidepanel a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        color: var(--almost-black);
+        color: var(--medium-gray);
         background-color: #fff;
         display: block;
         transition: 0.3s;
@@ -266,7 +266,7 @@ a:hover,
     }
 
     .sidepanel .dropbtn {
-        color: var(--almost-black);
+        color: var(--medium-gray);
     }
 
     /* When you mouse over the navigation links, change their color */
@@ -311,6 +311,20 @@ a:hover,
     .navbar__right-side {
         align-items: center;
     }
+
+    #register {
+        width: 80%;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .dropdown-content {
+        position: relative;
+        border: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
     .hero-section {
         display: flex;
         align-items: center;
