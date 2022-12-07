@@ -15,8 +15,23 @@ function setArrowDown() {
     arrowUp.classList.remove("show");
 }
 
-dropdownBtn.addEventListener("mouseover", setArrowUp);
-dropdownBtn.addEventListener("mouseout", setArrowDown);
+function toggleArrow() {
+    if (arrowDown.className === "arrowDown show") {
+        arrowDown.classList.remove("show");
+        arrowUp.classList.add("show");
+    } // else {
+    //     arrowUp.classList.remove("show");
+    //     arrowDown.classList.add("show");
+    // }
+}
+
+// Check the screen sizes for different mouse events
+if (window.screen.width > 600) {
+    dropdownBtn.addEventListener("mouseover", setArrowUp);
+    dropdownBtn.addEventListener("mouseout", setArrowDown);
+} else {
+    dropdownBtn.addEventListener("click", toggleArrow);
+}
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function toggleResponsiveness() {

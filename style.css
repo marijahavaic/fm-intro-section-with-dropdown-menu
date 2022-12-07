@@ -30,11 +30,28 @@ h1 {
     display: none;
 }
 .navbar,
-.navbar-item,
+.navbar__item,
 .navbar__right-side,
 .navbar__left-side {
     overflow: hidden;
     display: flex;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.sidepanel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__item,
+.navbar__right-side,
+.navbar__left-side {
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -123,7 +140,7 @@ a:hover,
 }
 
 .logo {
-    padding: 0 30px 0 0;
+    margin: 0 15px;
 }
 
 #register {
@@ -233,9 +250,6 @@ a:hover,
         justify-content: space-between;
     }
 
-    .logo {
-        padding-left: 20px;
-    }
     /* The sidepanel menu */
     .sidepanel {
         height: 100%; /* Specify a height */
@@ -248,6 +262,10 @@ a:hover,
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     /* The sidepanel links */
@@ -306,6 +324,7 @@ a:hover,
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        width: 100%;
     }
 
     .navbar__right-side {
