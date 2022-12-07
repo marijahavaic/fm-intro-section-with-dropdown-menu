@@ -20,108 +20,121 @@
     <body>
         <!-- Navbar -->
         <div class="navbar" id="navbar">
-            <div class="navbar__left-side">
-                <!-- Logo -->
-                <div class="navbar__item-logo">
-                    <img src="./images/logo.svg" class="logo" alt="Logo" />
-                </div>
-                <!-- Links -->
-                <div class="navbar__item">
-                    <!-- Features - dropdown -->
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            Features
-                            <img
-                                src="./images/icon-arrow-down.svg"
-                                class="arrow show"
-                                id="arrowDown"
-                                alt="Arrow down"
-                            />
-                            <img
-                                src="./images/icon-arrow-up.svg"
-                                class="arrow"
-                                id="arrowUp"
-                                alt="Arrow up"
-                            />
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">
+            <!-- Logo -->
+            <div class="navbar__item-logo">
+                <img src="./images/logo.svg" class="logo" alt="Logo" />
+            </div>
+            <div class="sidepanel" id="sidepanel">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    ><img
+                        src="./images/icon-close-menu.svg"
+                        class="close menu"
+                        id="closeMenu"
+                        alt="Close menu icon"
+                /></a>
+                <div class="navbar__left-side">
+                    <!-- Links -->
+                    <div class="navbar__item">
+                        <!-- Features - dropdown -->
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Features
                                 <img
-                                    src="./images/icon-todo.svg"
-                                    class="iconDropdown"
-                                    alt="Icon todo"
+                                    src="./images/icon-arrow-down.svg"
+                                    class="arrow show"
+                                    id="arrowDown"
+                                    alt="Arrow down"
                                 />
-                                Todo List
-                            </a>
-                            <a href="#">
                                 <img
-                                    src="./images/icon-calendar.svg"
-                                    class="iconDropdown"
-                                    alt="Icon calendar"
+                                    src="./images/icon-arrow-up.svg"
+                                    class="arrow"
+                                    id="arrowUp"
+                                    alt="Arrow up"
                                 />
-                                Calendar</a
-                            >
-                            <a href="#">
-                                <img
-                                    src="./images/icon-reminders.svg"
-                                    class="iconDropdown"
-                                    alt="Icon reminders"
-                                />
-                                Reminders</a
-                            >
-                            <a href="#">
-                                <img
-                                    src="./images/icon-planning.svg"
-                                    class="iconDropdown"
-                                    alt="Icon planning"
-                                />
-                                Planning</a
-                            >
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">
+                                    <img
+                                        src="./images/icon-todo.svg"
+                                        class="iconDropdown"
+                                        alt="Icon todo"
+                                    />
+                                    Todo List
+                                </a>
+                                <a href="#">
+                                    <img
+                                        src="./images/icon-calendar.svg"
+                                        class="iconDropdown"
+                                        alt="Icon calendar"
+                                    />
+                                    Calendar</a
+                                >
+                                <a href="#">
+                                    <img
+                                        src="./images/icon-reminders.svg"
+                                        class="iconDropdown"
+                                        alt="Icon reminders"
+                                    />
+                                    Reminders</a
+                                >
+                                <a href="#">
+                                    <img
+                                        src="./images/icon-planning.svg"
+                                        class="iconDropdown"
+                                        alt="Icon planning"
+                                    />
+                                    Planning</a
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <!-- Company - select -->
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            Company
-                            <img
-                                src="./images/icon-arrow-down.svg"
-                                class="arrow show"
-                                id="arrow arrowDown"
-                                alt="Arrow down"
-                            />
-                            <img
-                                src="./images/icon-arrow-up.svg"
-                                class="arrow"
-                                id="arrow arrowUp"
-                                alt="Arrow up"
-                            />
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">History</a>
-                            <a href="#">Our Team</a>
-                            <a href="#">Blog</a>
+                        <!-- Company - select -->
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Company
+                                <img
+                                    src="./images/icon-arrow-down.svg"
+                                    class="arrow show"
+                                    id="arrow arrowDown"
+                                    alt="Arrow down"
+                                />
+                                <img
+                                    src="./images/icon-arrow-up.svg"
+                                    class="arrow"
+                                    id="arrow arrowUp"
+                                    alt="Arrow up"
+                                />
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">History</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Blog</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Careers -->
-                    <a href="#" id="disabled">Careers</a>
-                    <!-- About -->
-                    <a href="#">About</a>
+                        <!-- Careers -->
+                        <a href="#" id="disabled">Careers</a>
+                        <!-- About -->
+                        <a href="#">About</a>
+                    </div>
+                </div>
+                <div class="navbar__right-side">
+                    <!-- Login -->
+                    <a href="#" id="login">Login</a>
+                    <!-- Register -->
+                    <a href="#" id="register">Register</a>
                 </div>
             </div>
-            <div class="navbar__right-side">
-                <!-- Login -->
-                <a href="#" id="login">Login</a>
-                <!-- Register -->
-                <a href="#" id="register">Register</a>
-            </div>
-            <a
-                href="javascript:void(0);"
-                class="icon"
-                onclick="toggleResponsiveness()"
-            >
-                <i class="fa fa-bars"></i>
-            </a>
+            <button class="openbtn" onclick="openNav()">
+                <img
+                    src="./images/icon-menu.svg"
+                    class="menu__icon"
+                    id="menuIcon"
+                    alt="Menu icon"
+                />
+            </button>
         </div>
         <!-- Hero section -->
         <div class="hero-section">
