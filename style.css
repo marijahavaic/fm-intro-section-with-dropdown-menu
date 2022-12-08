@@ -39,7 +39,7 @@ h1 {
 
 .navbar {
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 0 20px;
 }
 
@@ -54,6 +54,16 @@ h1 {
 .navbar__left-side {
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.navbar__item-logo {
+    height: 100%;
+}
+
+.logo {
+    padding-top: 15px;
+    margin: 0 15px;
+    object-fit: contain;
 }
 
 /* Links inside the navbar */
@@ -138,10 +148,6 @@ a:hover,
 .dropdown:hover .dropdown-content,
 .dropdown-content a:active {
     display: block;
-}
-
-.logo {
-    margin: 0 15px;
 }
 
 #register {
