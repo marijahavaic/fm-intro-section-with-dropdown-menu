@@ -377,9 +377,18 @@ a:hover,
         object-fit: cover;
         width: 100%;
     }
-    .hero-section__text-container {
+    .hero-section__container {
         margin-top: 40px;
         width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero-section__text-container {
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
