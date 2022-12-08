@@ -3,7 +3,7 @@ const companyDropBtn = document.getElementById("companyDropBtn");
 const arrowUp = document.getElementById("arrowUp");
 const arrowDown = document.getElementById("arrowDown");
 const overlay = document.getElementById("overlay");
-const dropDownContent = document.querySelectorAll(".dropdown-content");
+const dropDownContent = document.querySelector(".dropdown-content");
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
