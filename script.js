@@ -18,24 +18,6 @@ function setArrowDown() {
     arrowUp.classList.remove("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-function closeDropdown(event) {
-    if (!event.target.matches(".dropbtn")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-                openDropdown.classList.remove("show");
-            }
-        }
-    }
-}
-
-function toggleOpen(btn) {
-    btn.classList.toggle("open");
-}
-
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
     document.getElementById("sidepanel").style.width = "250px";
@@ -68,6 +50,20 @@ if (window.screen.width > 600) {
                 dropdownContent.style.display = "block";
             }
         });
+    }
+}
+
+// Close the dropdown menu if the user clicks outside of it
+function closeDropdown(event) {
+    if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+            }
+        }
     }
 }
 
