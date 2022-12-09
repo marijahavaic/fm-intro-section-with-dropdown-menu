@@ -19,12 +19,12 @@
     </head>
     <body>
         <!-- Navbar -->
-        <div class="navbar" id="navbar">
+        <nav class="navbar" id="navbar">
             <!-- Logo -->
             <div class="navbar__item-logo">
                 <img src="./images/logo.svg" class="logo" alt="Logo" />
             </div>
-            <div class="sidepanel" id="sidepanel">
+            <main class="sidepanel" id="sidepanel">
                 <a
                     href="javascript:void(0)"
                     class="closebtn"
@@ -126,7 +126,7 @@
                     <!-- Register -->
                     <a href="#" id="register">Register</a>
                 </div>
-            </div>
+            </main>
             <button class="openbtn" onclick="openNav()">
                 <img
                     src="./images/icon-menu.svg"
@@ -135,9 +135,9 @@
                     alt="Menu icon"
                 />
             </button>
-        </div>
-        <!-- Hero section -->
-        <div class="hero-section">
+        </nav>
+        <main>
+            <!-- Hero section -->
             <div class="hero-section__container">
                 <div class="hero-section__text-container">
                     <h1>Make remote work</h1>
@@ -158,12 +158,10 @@
                     <img src="./images/client-maker.svg" alt="Maker logo" />
                 </div>
             </div>
-            <div class="hero-section__banner">
-                <!-- <img src="./images/image-hero-desktop.png" alt="hero image" /> -->
-            </div>
-        </div>
+            <div class="hero-section__banner"></div>
+        </main>
         <div class="overlay" id="overlay"></div>
-        <div class="footer">
+        <footer>
             <div class="attribution">
                 Challenge by
                 <a
@@ -173,7 +171,7 @@
                 >. Coded by
                 <a href="https://marijahavaic.com">Marija Havaic</a>.
             </div>
-        </div>
+        </footer>
     </body>
     <script src="script.js"></script>
 </html>
