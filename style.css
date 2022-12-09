@@ -367,7 +367,6 @@ a:hover,
         flex-direction: column-reverse;
         margin: 0;
         max-height: 100%;
-        margin: 0;
         text-align: center;
     }
 
@@ -391,6 +390,11 @@ a:hover,
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .hero-section__text-section__footer {
+        width: 100%;
+        padding: 20px;
     }
 
     #heroText {
@@ -418,7 +422,7 @@ a:hover,
     }
 }
 
-@media only screen and (max-width: 2000px) and (min-width: 600px) {
+@media only screen and (max-width: 4000px) and (min-width: 600px) {
     .closebtn,
     .openbtn {
         display: none;
