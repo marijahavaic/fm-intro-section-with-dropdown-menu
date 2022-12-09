@@ -202,14 +202,13 @@ a:hover,
 
 .hero-section__banner {
     height: 100%;
+    width: 50%;
     margin-right: 100px;
-}
-
-.hero-section__banner img {
-    object-fit: cover;
-    max-height: 90%;
-    max-height: 100%;
-    justify-self: center;
+    background-image: url("./images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .learn-more {
@@ -217,7 +216,7 @@ a:hover,
     color: var(--almost-white);
     background-color: var(--almost-black);
     border: 1px solid var(--almost-black);
-    padding: 20px;
+    padding: 15px;
     border-radius: 16px;
     font-size: 20px;
     font-weight: 700;
@@ -371,12 +370,14 @@ a:hover,
     }
 
     .hero-section__banner {
-        margin: 0 auto;
-    }
-    .hero-section__banner img {
-        object-fit: cover;
+        height: 37vh;
         width: 100%;
-        height: 100%;
+        margin: 0 auto;
+        background-image: url("./images/image-hero-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .hero-section__container {
         margin-top: 40px;
@@ -395,14 +396,14 @@ a:hover,
 
     .hero-section__text-section__footer {
         width: 100%;
-        padding: 20px;
+        padding: 0 5px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .hero-section__text-section__footer img {
-        width: 100%;
+        width: 20%;
     }
 
     #heroText {
@@ -410,7 +411,7 @@ a:hover,
     }
 
     .hero-section button {
-        margin: 20px auto;
+        margin: 10px auto;
     }
 
     .overlay {
