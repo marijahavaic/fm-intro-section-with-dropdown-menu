@@ -2,6 +2,8 @@ const featuresDropBtn = document.getElementById("featuresDropBtn");
 const companyDropBtn = document.getElementById("companyDropBtn");
 const arrowUp = document.getElementById("arrowUp");
 const arrowDown = document.getElementById("arrowDown");
+const featuresArrowUp = document.getElementById("featuresArrowUp");
+const featuresArrowDown = document.getElementById("featuresArrowDown");
 const overlay = document.getElementById("overlay");
 var dropdown = document.getElementsByClassName("dropbtn");
 var i;
@@ -11,11 +13,15 @@ toggle between hiding and showing the dropdown content */
 function setArrowUp() {
     arrowDown.classList.remove("show");
     arrowUp.classList.add("show");
+    featuresArrowDown.classList.remove("show");
+    featuresArrowUp.classList.add("show");
 }
 
 function setArrowDown() {
     arrowDown.classList.add("show");
     arrowUp.classList.remove("show");
+    featuresArrowDown.classList.add("show");
+    featuresArrowUp.classList.remove("show");
 }
 
 /* Set the width of the sidebar to 250px (show it) */
