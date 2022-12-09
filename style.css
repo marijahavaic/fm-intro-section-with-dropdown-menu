@@ -236,7 +236,7 @@ a:hover,
     width: 80%;
 }
 
-.footer {
+footer {
     width: 100%;
 }
 
@@ -426,7 +426,7 @@ a:hover,
         opacity: 0;
         z-index: 1;
     }
-    .footer .attribution {
+    footer .attribution {
         margin: 40px 20px;
     }
 }
