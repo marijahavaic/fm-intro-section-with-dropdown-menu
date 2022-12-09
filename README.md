@@ -65,10 +65,9 @@ I have learned how to make a dropdown and a sidebar without a library.
 
 ### Useful resources
 
-- [Dropdown menu](https://www.w3schools.com/css/css_dropdowns.asp) - This helped me for dropdown menu. I really liked this pattern and will use it going forward.
-- [Hamburger menu](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) - This helped me with hamburger menu.
-
- - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Dropdown menu](https://www.w3schools.com/css/css_dropdowns.asp) - This helped me for dropdown menu in the navbar.
+- [Dropdown sidebar](https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp) - This helped me for dropdown menu in the sidebar.
+- [Hamburger menu](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) - This helped me with the hamburger menu.
 
 ## Author
 
