@@ -3,7 +3,8 @@ const companyDropBtn = document.getElementById("companyDropBtn");
 const arrowUp = document.getElementById("arrowUp");
 const arrowDown = document.getElementById("arrowDown");
 const overlay = document.getElementById("overlay");
-const dropDownContent = document.querySelector(".dropdown-content");
+var dropdown = document.getElementsByClassName("dropbtn");
+var i;
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -31,8 +32,8 @@ function closeDropdown(event) {
     }
 }
 
-function toggleOpen() {
-    dropDownContent.style.display === "block" ? "none" : "block";
+function toggleOpen(btn) {
+    btn.classList.toggle("open");
 }
 
 /* Set the width of the sidebar to 250px (show it) */
@@ -57,7 +58,17 @@ if (window.screen.width > 600) {
     companyDropBtn.addEventListener("mouseout", setArrowDown);
     window.addEventListener("click", closeDropdown);
 } else {
-    featuresDropBtn.addEventListener("click", toggleOpen);
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
 }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */

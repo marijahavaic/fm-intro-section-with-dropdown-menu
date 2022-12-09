@@ -358,6 +358,7 @@ a:hover,
         border: 0;
         padding: 0;
         box-shadow: none;
+        display: none;
     }
 
     .hero-section {
