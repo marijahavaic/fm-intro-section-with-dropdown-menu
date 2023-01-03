@@ -81,6 +81,7 @@ h1 {
 .dropdown {
     float: left;
     overflow: hidden;
+    position: relative;
 }
 
 a:hover,

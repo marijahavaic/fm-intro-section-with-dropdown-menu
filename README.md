@@ -32,8 +32,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-YzxV0kGpa8)
-- Live Site URL: [Add live site URL here](https://marijahavaic.github.io/fm-intro-section-with-dropdown-menu/)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-YzxV0kGpa8)
+- Live Site URL: [Github Pages](https://marijahavaic.github.io/fm-intro-section-with-dropdown-menu/)
+- Source Code URL: [Github](https://github.com/marijahavaic/fm-intro-section-with-dropdown-menu/)
 
 ## My process
 
